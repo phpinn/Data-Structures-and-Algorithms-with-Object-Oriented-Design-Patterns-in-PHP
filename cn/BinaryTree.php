@@ -9,14 +9,14 @@
 
 /**
  */
-require_once 'Opus11/AbstractTree.php';
-require_once 'Opus11/BasicArray.php';
-require_once 'Opus11/Exceptions.php';
-require_once 'Opus11/Box.php';
+require_once 'AbstractTree.php';
+require_once 'BasicArray.php';
+require_once 'Exceptions.php';
+require_once 'Box.php';
 
 //{
 /**
- * Represents a node in an binary tree.
+ * 二叉树实现
  *
  * @package Opus11
  */
@@ -24,15 +24,15 @@ class BinaryTree
     extends AbstractTree
 {
     /**
-     * @var object IObject The key in this node.
+     * @var 当前节点的值
      */
     protected $key = NULL;
     /**
-     * @var object BinaryTree The the left subtree of this node.
+     * @var 当前二叉树的左节点.
      */
     protected $left = NULL;
     /**
-     * @var object BinaryTree The the right subtree of this node.
+     * @var 当前二叉树的右节点.
      */
     protected $right = NULL;
 
@@ -45,12 +45,11 @@ class BinaryTree
 
 //{
     /**
-     * Constructs a BinaryTree with the specified key,
-     * and the specified left and right subtree.
+     * 以指定的值构造二叉树，并指定左右节点
      *
-     * @param object IObject $key The key in this node.
-     * @param mixed $left The left subtree of this node.
-     * @param mixed $right The left subtree of this node.
+     * @param $key 节点的值
+     * @param $left 左节点
+     * @param $right 右节点
      */
     public function __construct(
         $key = NULL, $left = NULL, $right = NULL)
@@ -77,7 +76,7 @@ class BinaryTree
 
 //{
     /**
-     * Destructor.
+     * 析构方法.
      */
     public function __destruct()
     {
@@ -90,7 +89,7 @@ class BinaryTree
 
 //{
     /**
-    * Purges this binary tree node, making it empty.
+    * 清空二叉树.
     **/
     public function purge ()
     {
@@ -101,10 +100,9 @@ class BinaryTree
 //}>c
 
     /**
-     * Tests whether this node is a leaf node.
+     * 判断当前节点是否是叶节点
      *
-     * @return boolean True if this node is a non-empty node
-     * with two empty subtrees; false otherwise.
+     * @return boolean 如果当前节点非空且有两个空的子节点时为true，否则为false.
      */
     public function isLeaf()
     {
@@ -114,9 +112,9 @@ class BinaryTree
     }
 
     /**
-     * Returns the degree of this node.
+     * 获得当前节点的度数.
      *
-     * @return integer 2 if this node is non-empty; 0 otherwise.
+     * @return boolean 如果非空返回2，否则返回0.
      */
     public function getDegree()
     {
@@ -124,9 +122,9 @@ class BinaryTree
     }
 
     /**
-     * Tests whether this node is empty.
+     * 判断当前节点是否为空
      *
-     * @return boolean True if this node is empty; false otherwise.
+     * @return boolean 如果为空返回True,否则false.
      */
     public function isEmpty()
     {
@@ -134,9 +132,9 @@ class BinaryTree
     }
 
     /**
-     * Key getter.
+     * 返回当前节点的值
      *
-     * @return object IObject The key in this node.
+     * @return 当前节点的值
      */
     public function getKey()
     {
@@ -146,10 +144,10 @@ class BinaryTree
     }
 
     /**
-     * Returns the specified subtree of this node.
+     * 返回指定节点的子节点.
      *
-     * @param integer $i The number of the subtree to return.
-     * @return object BinaryTree The specified subtree of this node.
+     * @param $i 需要返回的子节点的序号，0为左节点，1为右节点.
+     * @return 当前节点的子树.
      */
     public function getSubtree($i)
     {
@@ -162,10 +160,10 @@ class BinaryTree
     }
 
     /**
-     * Attaches the specified object as the key of this node.
-     * The node must be initially empty.
+     * 给节点赋值.
+     * 当前节点必须为空.
      *
-     * @param object IObject $object The key to attach.
+     * @param $object 添加的key值.
      */
     public function attachKey(IObject $obj)
     {
@@ -177,7 +175,8 @@ class BinaryTree
     }
 
     /**
-     * Detaches the key from this node; making it the empty node.
+     * 删除节点，使节点为空
+     * 节点不能有子树.
      */
     public function detachKey()
     {
@@ -191,9 +190,9 @@ class BinaryTree
     }
 
     /**
-     * Returns the left subtree of this node.
+     * 返回当前节点的左子树.
      *
-     * @return object BinaryTree The left subtree of this node.
+     * @return 节点的左子树.
      */
     public function getLeft()
     {
@@ -203,9 +202,9 @@ class BinaryTree
     }
 
     /**
-     * Attaches the specified binary tree as the left subtree of this node.
+     * 给当前节点增加左子树
      *
-     * @param object BinaryTree $t The new left subtree of this node.
+     * @param $t 当前节点的新子树.
      */
     public function attachLeft(BinaryTree $t)
     {
@@ -215,9 +214,9 @@ class BinaryTree
     }
 
     /**
-     * Detaches and returns the left subtree of this node.
+     * 删除左子树.
      *
-     * @return object BinaryTree The left subtree of this node.
+     * @return 删除的左子树.
      */
     public function detachLeft()
     {
@@ -229,9 +228,9 @@ class BinaryTree
     }
 
     /**
-     * Returns the right subtree of this node.
+     * 返回右子树.
      *
-     * @return object BinaryTree The right subtree of this node.
+     * @return 返回当前节点的右子树.
      */
     public function getRight()
     {
@@ -241,9 +240,9 @@ class BinaryTree
     }
 
     /**
-     * Attaches the specified binary tree as the right subtree of this node.
+     * 给当前节点增加右子树
      *
-     * @param object BinaryTree $t The new right subtree of this node.
+     * @param $t 当前节点的新子树.
      */
     public function attachRight(BinaryTree $t)
     {
@@ -253,8 +252,9 @@ class BinaryTree
     }
 
     /**
-     * Detaches and returns the right subtree of this node.
-     * @return object BinaryTree The right subtree of this node.
+     * 删除右子树.
+     *
+     * @return 删除的右子树.
      */
     public function detachRight()
     {
