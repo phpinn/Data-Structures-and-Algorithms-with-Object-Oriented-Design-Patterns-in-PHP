@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0">
+    <name>Opus11</name>
+    <summary>Sources to the Opus11 library.</summary>
+    <description>
+	The Opus11 package comprises the PHP programs from
+	"Data Structures and Algorithms
+	with Object-Oriented Design Patterns in PHP"
+	by Bruno R. Preiss.
+    </description>
+    <license>Copyright (c) 2005 by Bruno R. Preiss</license>
+    <maintainers>
+	<maintainer>
+	    <user>brpreiss</user>
+	    <name>Bruno R. Preiss</name>
+	    <email>brpreiss@brpreiss.com</email>
+	    <role>lead</role>
+	</maintainer>
+    </maintainers>
+
+    <release>
+	<version>1.0</version>
+	<date>2005-12-10</date>
+	<state>stable</state>
+	<notes>
+	    This is the first release.
+	</notes>
+	<filelist>
+	    <dir name="/" baseinstalldir="Opus11">
+		<file role="php">AbstractComparable.php</file>
+		<file role="php">AbstractContainer.php</file>
+		<file role="php">AbstractCursor.php</file>
+		<file role="php">AbstractDeque.php</file>
+		<file role="php">AbstractDigraph.php</file>
+		<file role="php">AbstractDoubleEndedPriorityQueue.php</file>
+		<file role="php">AbstractGraph.php</file>
+		<file role="php">AbstractHashTable.php</file>
+		<file role="php">AbstractIterator.php</file>
+		<file role="php">AbstractMatrix.php</file>
+		<file role="php">AbstractMergeablePriorityQueue.php</file>
+		<file role="php">AbstractMultiset.php</file>
+		<file role="php">AbstractObject.php</file>
+		<file role="php">AbstractOrderedList.php</file>
+		<file role="php">AbstractPartition.php</file>
+		<file role="php">AbstractPrePostVisitor.php</file>
+		<file role="php">AbstractPriorityQueue.php</file>
+		<file role="php">AbstractQueue.php</file>
+		<file role="php">AbstractQuickSorter.php</file>
+		<file role="php">AbstractRandomVariable.php</file>
+		<file role="php">AbstractSearchableContainer.php</file>
+		<file role="php">AbstractSearchTree.php</file>
+		<file role="php">AbstractSet.php</file>
+		<file role="php">AbstractSolution.php</file>
+		<file role="php">AbstractSolver.php</file>
+		<file role="php">AbstractSortedList.php</file>
+		<file role="php">AbstractSorter.php</file>
+		<file role="php">AbstractStack.php</file>
+		<file role="php">AbstractTree.php</file>
+		<file role="php">AbstractVisitor.php</file>
+		<file role="php">Algorithms.php</file>
+		<file role="php">Application11.php</file>
+		<file role="php">Application12.php</file>
+		<file role="php">Application1.php</file>
+		<file role="php">Application2.php</file>
+		<file role="php">Application3.php</file>
+		<file role="php">Application4.php</file>
+		<file role="php">Application5.php</file>
+		<file role="php">Application6.php</file>
+		<file role="php">Application7.php</file>
+		<file role="php">Application8.php</file>
+		<file role="php">Application9.php</file>
+		<file role="php">Association.php</file>
+		<file role="php">AVLTree.php</file>
+		<file role="php">BasicArray.php</file>
+		<file role="php">BinaryHeap.php</file>
+		<file role="php">BinaryInsertionSorter.php</file>
+		<file role="php">BinarySearchTree.php</file>
+		<file role="php">BinaryTree.php</file>
+		<file role="php">BinomialQueue.php</file>
+		<file role="php">BinomialTree.php</file>
+		<file role="php">BoxedBoolean.php</file>
+		<file role="php">BoxedFloat.php</file>
+		<file role="php">BoxedInteger.php</file>
+		<file role="php">BoxedString.php</file>
+		<file role="php">Box.php</file>
+		<file role="php">BreadthFirstBranchAndBoundSolver.php</file>
+		<file role="php">BreadthFirstSolver.php</file>
+		<file role="php">BTree.php</file>
+		<file role="php">BubbleSorter.php</file>
+		<file role="php">BucketSorter.php</file>
+		<file role="php">ChainedHashTable.php</file>
+		<file role="php">ChainedScatterTable.php</file>
+		<file role="php">Circle.php</file>
+		<file role="php">Complex.php</file>
+		<file role="php">CountingVisitor.php</file>
+		<file role="php">Deap.php</file>
+		<file role="php">Demo10.php</file>
+		<file role="php">Demo1.php</file>
+		<file role="php">Demo2.php</file>
+		<file role="php">Demo3.php</file>
+		<file role="php">Demo4.php</file>
+		<file role="php">Demo5.php</file>
+		<file role="php">Demo6.php</file>
+		<file role="php">Demo7.php</file>
+		<file role="php">Demo9.php</file>
+		<file role="php">DenseMatrix.php</file>
+		<file role="php">DepthFirstBranchAndBoundSolver.php</file>
+		<file role="php">DepthFirstSolver.php</file>
+		<file role="php">DequeAsArray.php</file>
+		<file role="php">DequeAsLinkedList.php</file>
+		<file role="php">DigraphAsLists.php</file>
+		<file role="php">DigraphAsMatrix.php</file>
+		<file role="php">Edge.php</file>
+		<file role="php">Example.php</file>
+		<file role="php">Exceptions.php</file>
+		<file role="php">Experiment1.php</file>
+		<file role="php">Experiment2.php</file>
+		<file role="php">ExponentialRV.php</file>
+		<file role="php">ExpressionTree.php</file>
+		<file role="php">GeneralTree.php</file>
+		<file role="php">GraphAsLists.php</file>
+		<file role="php">GraphAsMatrix.php</file>
+		<file role="php">GraphicalObject.php</file>
+		<file role="php">HeapSorter.php</file>
+		<file role="php">IComparable.php</file>
+		<file role="php">IContainer.php</file>
+		<file role="php">ICursor.php</file>
+		<file role="php">IDeque.php</file>
+		<file role="php">IDigraph.php</file>
+		<file role="php">IDoubleEndedPriorityQueue.php</file>
+		<file role="php">IEdge.php</file>
+		<file role="php">IGraphicsPrimitives.php</file>
+		<file role="php">IGraph.php</file>
+		<file role="php">IHashTable.php</file>
+		<file role="php">IIterator.php</file>
+		<file role="php">IMatrix.php</file>
+		<file role="php">IMergeablePriorityQueue.php</file>
+		<file role="php">IMultiset.php</file>
+		<file role="php">InOrder.php</file>
+		<file role="php">IObject.php</file>
+		<file role="php">IOrderedList.php</file>
+		<file role="php">IPartition.php</file>
+		<file role="php">IPolynomial.php</file>
+		<file role="php">IPrePostVisitor.php</file>
+		<file role="php">IPriorityQueue.php</file>
+		<file role="php">IQueue.php</file>
+		<file role="php">IRandomVariable.php</file>
+		<file role="php">ISearchableContainer.php</file>
+		<file role="php">ISearchTree.php</file>
+		<file role="php">ISet.php</file>
+		<file role="php">ISolution.php</file>
+		<file role="php">ISolver.php</file>
+		<file role="php">ISortedList.php</file>
+		<file role="php">ISorter.php</file>
+		<file role="php">ISparseMatrix.php</file>
+		<file role="php">IStack.php</file>
+		<file role="php">ITree.php</file>
+		<file role="php">IVertex.php</file>
+		<file role="php">IVisitor.php</file>
+		<file role="php">LeftistHeap.php</file>
+		<file role="php">Limits.php</file>
+		<file role="php">LinkedList.php</file>
+		<file role="php">MedianOfThreeQuickSorter.php</file>
+		<file role="php">MultiDimensionalArray.php</file>
+		<file role="php">MultisetAsArray.php</file>
+		<file role="php">MultisetAsLinkedList.php</file>
+		<file role="php">MWayTree.php</file>
+		<file role="php">NaryTree.php</file>
+		<file role="php">OpenScatterTable.php</file>
+		<file role="php">OpenScatterTableV2.php</file>
+		<file role="php">OrderedListAsArray.php</file>
+		<file role="php">OrderedListAsLinkedList.php</file>
+		<file role="php">PartitionAsForest.php</file>
+		<file role="php">PartitionAsForestV2.php</file>
+		<file role="php">PartitionAsForestV3.php</file>
+		<file role="php">PartitionTree.php</file>
+		<file role="php">Person.php</file>
+		<file role="php">PersonWithChildren.php</file>
+		<file role="php">Point.php</file>
+		<file role="php">PolynomialAsOrderedList.php</file>
+		<file role="php">PolynomialAsSortedList.php</file>
+		<file role="php">PostOrder.php</file>
+		<file role="php">PreOrder.php</file>
+		<file role="php">PrintingVisitor.php</file>
+		<file role="php">QueueAsArray.php</file>
+		<file role="php">QueueAsLinkedList.php</file>
+		<file role="php">RadixSorter.php</file>
+		<file role="php">RandomNumberGenerator.php</file>
+		<file role="php">Rectangle.php</file>
+		<file role="php">ReducingVisitor.php</file>
+		<file role="php">ScalesBalancingProblem.php</file>
+		<file role="php">SetAsArray.php</file>
+		<file role="php">SetAsBitVector.php</file>
+		<file role="php">SimpleRV.php</file>
+		<file role="php">Simulation.php</file>
+		<file role="php">SortedListAsArray.php</file>
+		<file role="php">SortedListAsLinkedList.php</file>
+		<file role="php">SparseMatrixAsArray.php</file>
+		<file role="php">SparseMatrixAsLinkedList.php</file>
+		<file role="php">SparseMatrixAsVector.php</file>
+		<file role="php">Square.php</file>
+		<file role="php">StackAsArray.php</file>
+		<file role="php">StackAsLinkedList.php</file>
+		<file role="php">StraightInsertionSorter.php</file>
+		<file role="php">StraightSelectionSorter.php</file>
+		<file role="php">Term.php</file>
+		<file role="php">Timer.php</file>
+		<file role="php">TwoWayMergeSorter.php</file>
+		<file role="php">UniformRV.php</file>
+		<file role="php">Vertex.php</file>
+		<file role="php">ZeroOneKnapsackProblem.php</file>
+		<file role="data">dict.txt</file>
+	    </dir>
+	</filelist>
+    </release>
+</package>
